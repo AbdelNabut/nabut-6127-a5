@@ -1,5 +1,4 @@
 @startuml
-'https://plantuml.com/class-diagram
 
 class App {
     main()
@@ -7,13 +6,56 @@ class App {
 }
 
 class InventoryTrackerController {
+- valueTextField: TextField
+- serialNumberTextField: serialNumberTextField
+- nameTextField: nameField
+addButtonClicked()
+loadButtonClicked()
+removeButtonClicked()
+saveButtonClicked()
+searchByNameButtonClicked()
+searchBySerialNumberButtonClicked()
+searchByValueButtonClicked()
+addItem()
+loadList()
+removeList()
+saveList()
+searchByName()
+searchBySerialNumber()
+searchByValue()
+}
+
+class Item {
+- value: Double
+- serialNumber: int
+- name: String
+getValue()
+setValue()
+getSerialNumber()
+setSerialNumber()
+getName()
+setName()
+}
+
+class Serializer {
+serializeTSV()
+serializeHTML()
+serializeJSON()
 
 }
 
-class Item {}
+class Deserializer {
+deserializeTSV()
+deserializeHTML()
+deserializeJSON()
+}
 
-class Serializer {}
+javafx.Application <|-- App
 
-class DeSerializer {}
+App - InventoryTrackerController
+
+InventoryTrackerController - Item
+InventoryTrackerController - Serializer
+InventoryTrackerController - Deserializer
 
 @enduml
