@@ -6,6 +6,10 @@ class App {
 }
 
 class InventoryTrackerController {
++ valueColumn: TableView<Item>
+- valueColumn: TableView<Item, Double>
+- serialNumberColumn: TableView<Item, Integer>
+- nameColumn: TableView<Item, String>
 - valueTextField: TextField
 - serialNumberTextField: serialNumberTextField
 - nameTextField: nameField
@@ -23,6 +27,8 @@ saveList()
 searchByName()
 searchBySerialNumber()
 searchByValue()
+itemExists()
+showAlert()
 }
 
 class Item {

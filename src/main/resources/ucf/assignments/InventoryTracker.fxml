@@ -29,11 +29,11 @@
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <TableView prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="7" GridPane.rowIndex="1" GridPane.rowSpan="3">
+      <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="7" GridPane.rowIndex="1" GridPane.rowSpan="3">
         <columns>
-          <TableColumn prefWidth="187.0" text="Value" />
-          <TableColumn minWidth="0.0" prefWidth="231.0" text="Serial Number" />
-            <TableColumn minWidth="0.0" prefWidth="181.0" text="Name" />
+          <TableColumn fx:id="valueColumn" prefWidth="187.0" text="Value" />
+          <TableColumn fx:id="serialNumberColumn" minWidth="0.0" prefWidth="231.0" text="Serial Number" />
+            <TableColumn fx:id="nameColumn" minWidth="0.0" prefWidth="181.0" text="Name" />
         </columns>
       </TableView>
       <TextField fx:id="valueTextField" GridPane.rowIndex="4" GridPane.valignment="BOTTOM">

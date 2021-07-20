@@ -1,23 +1,35 @@
 package ucf.assignments;
 
+import java.math.BigDecimal;
+
 public class Item {
-    private Double value;
-    private int serialNumber;
+    private String value;
+    private String serialNumber;
     private String name;
 
-    public Double getValue() {
+    public Item() {
+
+    }
+
+    public Item(String name, String value, String serialNumber) {
+        this.name = name;
+        this.value = value;
+        this.serialNumber = serialNumber;
+    }
+
+    public String getValue() {
         return value;
     }
 
-    public void setValue(Double value) {
+    public void setValue(String value) {
         this.value = value;
     }
 
-    public int getSerialNumber() {
+    public String getSerialNumber() {
         return serialNumber;
     }
 
-    public void setSerialNumber(int serialNumber) {
+    public void setSerialNumber(String serialNumber) {
         this.serialNumber = serialNumber;
     }
 
