@@ -22,13 +22,20 @@ searchBySerialNumberButtonClicked()
 searchByValueButtonClicked()
 addItem()
 loadList()
+loadJSON()
+loadHTML()
+loadTSV()
 removeList()
 saveList()
+saveJSON()
+saveTSV()
+saveHTML()
 searchByName()
 searchBySerialNumber()
 searchByValue()
 itemExists()
 showAlert()
+parseCurrency()
 }
 
 class Item {
@@ -43,17 +50,13 @@ getName()
 setName()
 }
 
-class Serializer {
-serializeTSV()
-serializeHTML()
-serializeJSON()
+class JSONSerializer {
+serialize()
 
 }
 
-class Deserializer {
-deserializeTSV()
-deserializeHTML()
-deserializeJSON()
+class JSONDeserializer {
+serialize()
 }
 
 javafx.Application <|-- App
@@ -61,7 +64,7 @@ javafx.Application <|-- App
 App - InventoryTrackerController
 
 InventoryTrackerController - Item
-InventoryTrackerController - Serializer
-InventoryTrackerController - Deserializer
+InventoryTrackerController - JSONSerializer
+InventoryTrackerController - JSONDeserializer
 
 @enduml

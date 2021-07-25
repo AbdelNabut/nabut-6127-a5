@@ -1,0 +1,27 @@
+[
+  {
+    "name": "eggs",
+    "value": "$3.59",
+    "serialNumber": "ABSD45FR45"
+  },
+  {
+    "name": "bread",
+    "value": "$2.15",
+    "serialNumber": "099ABC0991"
+  },
+  {
+    "name": "apples",
+    "value": "$4.99",
+    "serialNumber": "54AB32QW09"
+  },
+  {
+    "name": "pears",
+    "value": "$5.41",
+    "serialNumber": "MN56UH72OW"
+  },
+  {
+    "name": "strawberries",
+    "value": "$2.99",
+    "serialNumber": "MQ45PS55PV"
+  }
+]

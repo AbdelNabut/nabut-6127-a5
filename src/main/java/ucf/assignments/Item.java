@@ -1,6 +1,9 @@
-package ucf.assignments;
+/*
+ *  UCF COP3330 Summer 2021 Assignment 5 Solution
+ *  Copyright 2021 Abdel Nabut
+ */
 
-import java.math.BigDecimal;
+package ucf.assignments;
 
 public class Item {
     private String value;
@@ -10,6 +13,7 @@ public class Item {
     public Item() {
 
     }
+
 
     public Item(String name, String value, String serialNumber) {
         this.name = name;
